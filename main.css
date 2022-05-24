@@ -1,0 +1,26 @@
+h1, h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+#landing-header .row {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 768px) {
+  #landing-header .row {
+    background-position: center right;
+    background-image: url('./assets/header_background_desktop.jpeg');
+  }
+}
+@media only screen and (max-width: 767px) {
+  #landing-header .row {
+    background-position: top center;
+    background-image: url('./assets/header_background_mobile.jpeg');
+  }
+  #landing-header .row .header-content-end {
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-image: url('./assets/header_bird_mobile.png');
+  }
+}
