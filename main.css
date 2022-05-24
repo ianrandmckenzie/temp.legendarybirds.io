@@ -9,26 +9,45 @@ a:hover {
   color: #56D6A2;
   border-bottom: 1px dashed #56D6A2;
 }
-#landing-header .row {
+p,
+div.bg-contrast {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 4px #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+.bg-contrast {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
+}
+#landing-header {
   background-size: cover;
   background-repeat: no-repeat;
+}
+#landing-header .row {
   min-height: 100vh;
 }
 @media only screen and (min-width: 768px) {
-  #landing-header .row {
-    background-position: center right;
+  #landing-header {
+    background-position: top left;
     background-image: url('./assets/header_background_desktop.jpeg');
   }
 }
+@media only screen and (max-width: 992px) {
+  #landing-header {
+    background-position: bottom left;
+  }
+}
 @media only screen and (max-width: 767px) {
-  #landing-header .row {
+  #landing-header {
     background-position: top center;
     background-image: url('./assets/header_background_mobile.jpeg');
   }
-  #landing-header .row .header-content-end {
-    background-size: contain;
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-image: url('./assets/header_bird_mobile.png');
+  #landing-header .header-content-end img {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #landing-header .header-content-end img {
+    max-width: 75%;
   }
 }
