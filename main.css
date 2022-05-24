@@ -1,5 +1,13 @@
-h1, h2 {
+h2 {
   font-family: 'Josefin Sans', sans-serif;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  color: #56D6A2;
+  border-bottom: 1px dashed #56D6A2;
 }
 #landing-header .row {
   background-size: cover;
